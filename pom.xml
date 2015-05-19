@@ -54,11 +54,13 @@
 			<groupId>com.taobao</groupId>
 			<artifactId>sdk-java-auto</artifactId>
 			<version>1.0.0</version>
-			<scope>compile</scope>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/taobao-sdk-java-auto_1430793818834-20150505.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>
-		<plugins>
+	
+		<plugins><!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-install-plugin</artifactId>
@@ -80,7 +82,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>appassembler-maven-plugin</artifactId>
@@ -93,7 +95,6 @@
 							<name>tradeWatcher</name>
 						</program>
 					</programs>
-
 				</configuration>
 				<executions>
 					<execution>
